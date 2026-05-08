@@ -7,10 +7,10 @@ const SecondaryFooter = () => {
             <span className=""> &copy; 2026 Canvitch. All rights reserved.</span>
         </div>
         <div className="flex text-center md:flex-row flex-col gap-5 p-3">
-            <a href="http://" target="_blank" rel="noopener noreferrer" className="">privacy policy</a>
-            <a href="http://" target="_blank" rel="noopener noreferrer" className="">terms of service</a>
-            <a href="http://" target="_blank" rel="noopener noreferrer" className="">shipping info</a>
-            <a href="http://" target="_blank" rel="noopener noreferrer" className="">contact us</a>
+            <a href="/" target="_blank" rel="noopener noreferrer" className="">privacy policy</a>
+            <a href="/" target="_blank" rel="noopener noreferrer" className="">terms of service</a>
+            <a href="/" target="_blank" rel="noopener noreferrer" className="">shipping info</a>
+            <a href="/" target="_blank" rel="noopener noreferrer" className="">contact us</a>
         </div>
     </div>
   )

@@ -1,11 +1,11 @@
-import logo from '../../assets/logo.png'
+// import logo from '../../assets/logo.png'
 
 const container2 = () => {
 
     const steps = [
-        {id: 1, logo, title: '1. choose canvas', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' },
-        {id: 2, logo, title: '2. upload printing', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' },
-        {id: 3, logo, title: '3. we print & ship', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' }
+        {id: 1, logo: 'wall_art', title: '1. choose canvas', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' },
+        {id: 2, logo: 'brush', title: '2. upload printing', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' },
+        {id: 3, logo: 'local_shipping', title: '3. we print & ship', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, incidunt?' }
     ]
 
   return (
@@ -18,7 +18,7 @@ const container2 = () => {
             {steps.map((step) => {
                 return (
                     <div key={step.id} className="md:w-1/3 justify-items-center p-5 md:p-10">
-                        <img src={step.logo} alt="" className='rounded-full h-30 w-30  mb-2' />
+                        <div className='material-symbols-outlined rounded-full h-25 w-25 flex mb-5 bg-amber-900 justify-center content-center text-amber-100' style={{ fontSize: '48px' }}>{step.logo}</div>
                         <div className="text-amber-900 md:text-3xl text-xl font-bold mb-2 capitalize">{step.title}</div>
                         <div className="">{step.desc}</div>
                     </div>

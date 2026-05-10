@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 const footer = () => {
 
   const f_elem = [
-    { id: 1, title: 'Legal', icon1: 'privacy_tip', i_name1: 'Privacy Policy', link1: '/about', icon2: 'gavel', i_name2: 'Terms of Service', link2: '/design' },
-    { id: 2, title: 'Support', icon1: 'local_shipping', i_name1: 'Shipping Info', link1: '/about', icon2: 'call', i_name2: 'Contact Us', link2: '/design' },
-    { id: 3, title: 'Contact', icon1: 'share', i_name1: 'Share', link1: '/about', icon2: 'mail', i_name2: 'Mail', link2: '/design' }
+    { id: 1, title: 'Legal', icon1: 'privacy_tip', i_name1: 'Privacy Policy', link1: '/privacy-policy', icon2: 'gavel', i_name2: 'Terms of Service', link2: '/terms-of-service' },
+    { id: 2, title: 'Support', icon1: 'local_shipping', i_name1: 'Shipping Info', link1: '/shipping-info', icon2: 'call', i_name2: 'Contact Us', link2: '/about' },
+    { id: 3, title: 'Contact', icon1: 'share', i_name1: 'Share', link1: '/about', icon2: 'mail', i_name2: 'Mail', link2: '/about' }
   ]
 
   return (

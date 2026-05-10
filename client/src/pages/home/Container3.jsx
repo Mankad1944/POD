@@ -1,5 +1,6 @@
 // import logo from "../../assets/logo.png";
 import logo1 from "../../assets/logo - Copy.png";
+import { Link } from "react-router-dom";
 
 const Container1 = () => {
   return (
@@ -8,7 +9,7 @@ const Container1 = () => {
             <div className="md:text-4xl text-3xl mb-5 text-amber-900">Featured designs</div>
             <div className="md:justify-between flex flex-wrap">
                 <span className="md:mb-0 mb-2 md:py-0 py-5 text-justify">curated highlights from our community of independent artists.</span>
-                <a className="text-amber-900 border-2 border-yellow-900 rounded-full p-1.5 px-5 transition-all duration-300 hover:bg-amber-900 hover:text-amber-200" href="/designer">view all designs &rarr; </a>
+                <Link to="/design" className="text-amber-900 border-2 border-yellow-900 rounded-full p-1.5 px-5 transition-all duration-300 hover:bg-amber-900 hover:text-amber-200">view all designs &rarr; </Link>
             </div>
         </div>
         <div className="md:flex w-full md:p-5">

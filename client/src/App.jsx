@@ -1,5 +1,6 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 
+// import UD from "./pages/UnderConstructionPage"
 import MainNavbar from "./components/navbar/MainNavbar"
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -37,13 +38,26 @@ const MainLayout = () => {
 //   );
 // };
 
+import Latest from './pages/design/Types/Latest'
+import Trending from './pages/design/Types/Trending'
+import Abstract from './pages/design/Types/Abstract'
+import Typography from './pages/design/Types/Typography'
+import Minimalist from './pages/design/Types/Minimalist'
+
 const App = () => {
   return (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/design" element={<Design />} />
+        {/* <Route path="/design" element={<UD />} /> */}
+        <Route path="/design" element={<Design />}>
+          <Route path="latest" element={<Latest />} />
+          <Route path="trending" element={<Trending />} />
+          <Route path="abstract" element={<Abstract />} />
+          <Route path="typography" element={<Typography />} />
+          <Route path="minimalist" element={<Minimalist />} />
+        </Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
       </Route>

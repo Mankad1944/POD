@@ -14,14 +14,19 @@ const container2 = () => {
             <div className="text-amber-900 md:text-5xl mb-4 text-2xl">Effortless creation, from screen to seam.</div>
             <div className="text-amber-600 md:text-xl md:w-200">Our streamlined process ensures your art looks exactly as intended on high-quality fabrics.</div>
         </div>
-        <div className="md:flex flex-wrap w-full text-center md:mt-25 md:mb-10">
+        <div className="md:flex flex-wrap w-full text-center md:mt-25 md:mb-10 relative">
             {steps.map((step) => {
                 return (
-                    <div key={step.id} className="md:w-1/3 justify-items-center p-5 md:p-10">
-                        <div className='material-symbols-outlined rounded-full h-25 w-25 flex mb-5 bg-amber-900 justify-center content-center text-amber-100' style={{ fontSize: '48px' }}>{step.logo}</div>
-                        <div className="text-amber-900 md:text-3xl text-xl font-bold mb-2 capitalize">{step.title}</div>
-                        <div className="">{step.desc}</div>
-                    </div>
+                    <>
+                        <div className="border-amber-500 border-2 w-100 top-22 left-72 absolute border-dashed animate-fadeRight origin-left" />
+                        <div className="border-amber-500 border-2 w-100 top-22 right-72 absolute border-dashed hidden md:block animate-fadeRight origin-left" />
+                        {/* <hr /> */}
+                        <div key={step.id} className="md:w-1/3 justify-items-center p-5 md:p-10 z-1">
+                            <div className='material-symbols-outlined rounded-full h-25 w-25 flex mb-5 bg-amber-900 justify-center content-center text-amber-100' style={{ fontSize: '48px' }}>{step.logo}</div>
+                            <div className="text-amber-900 md:text-3xl text-xl font-bold mb-2 capitalize">{step.title}</div>
+                            <div className="">{step.desc}</div>
+                        </div>
+                    </>
                 )
             })}
         </div>

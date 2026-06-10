@@ -1,4 +1,4 @@
-export default function UnderConstructionPage() {
+export default function UnderConstructionPage({data}) {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-amber-50">
       <div className="max-w-xl w-full text-center rounded-3xl shadow-sm border border-amber-200 bg-white p-10">
@@ -7,7 +7,7 @@ export default function UnderConstructionPage() {
         </p>
 
         <h1 className="mt-4 text-4xl md:text-5xl font-semibold text-amber-950">
-          This page is still being built.
+          {data} page is still being built.
         </h1>
 
         <p className="mt-4 text-base text-amber-900/80 leading-7">

@@ -1,7 +1,7 @@
 // Card.jsx
 const Card = ({ data }) => {
   return (
-    <div className="h-96 w-full bg-amber-300 rounded-2xl p-4 shadow-sm flex flex-col hover:shadow-md transition-all duration-300 group">
+    <div className="h-96 w-full bg-amber-200 rounded-2xl p-4 shadow-sm flex flex-col hover:shadow-md transition-all duration-300 group">
       
       {/* Image Container */}
       <div className="w-full h-2/3 mb-4 overflow-hidden rounded-xl bg-amber-200">

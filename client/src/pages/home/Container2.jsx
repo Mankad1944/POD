@@ -18,7 +18,7 @@ const container2 = () => {
             {steps.map((step) => {
                 return (
                     <>
-                        <div className="border-amber-500 border-2 w-100 top-22 left-72 absolute border-dashed animate-fadeRight origin-left" />
+                        <div className="border-amber-500 border-2 w-100 top-22 left-72 absolute border-dashed hidden md:block animate-fadeRight origin-left" />
                         <div className="border-amber-500 border-2 w-100 top-22 right-72 absolute border-dashed hidden md:block animate-fadeRight origin-left" />
                         {/* <hr /> */}
                         <div key={step.id} className="md:w-1/3 justify-items-center p-5 md:p-10 z-1">
